@@ -1,0 +1,38 @@
+[build-system]
+requires = ["flit_core >= 3.4"]
+build-backend = "flit_core.buildapi"
+
+
+[project]
+name = "bplot"
+version = "0.8.0"
+description = "A package to make beautiful plots of B-RISK analyses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+keywords = ["B-RISK", "plotting", "zone model"]
+authors = [
+  {name = "Paul Horne"}
+]
+maintainers = [
+  {name = "Paul Horne"}
+]
+
+classifiers = [
+  # Specify the Python versions you support here. In particular, ensure
+  # that you indicate you support Python 3. These classifiers are *not*
+  # checked by "pip install". See instead "requires-python" key in this file.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "matplotlib",
+  "striprtf",
+  "openpyxl"
+]
